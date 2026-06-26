@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="F4FLUX — Premium streetwear brand. More than clothing. It's an identity." />
+  <meta name="keywords" content="F4FLUX, streetwear, clothing, premium fashion, luxury apparel" />
+  <meta name="author" content="F4FLUX" />
+  <meta property="og:title" content="F4FLUX — More Than Clothing. It's an Identity." />
+  <meta property="og:description" content="Premium streetwear inspired by confidence, creativity, and individuality." />
+  <meta property="og:type" content="website" />
+  <title>F4FLUX — More Than Clothing. It's an Identity.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <!-- Inline fallback fonts (for offline/GitHub Pages preview) -->
+  <style>
+    /* Inline critical overrides */
+    .hero-tagline em { font-style: normal; }
+  </style>
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- ═══ LOADING SCREEN ═══ -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-logo">F4FLUX</div>
+    <div class="loader-bar-track"><div class="loader-bar"></div></div>
+    <p class="loader-text">Loading Experience</p>
+  </div>
+
+  <!-- ═══ PAGE TRANSITION OVERLAY ═══ -->
+  <div id="page-transition" aria-hidden="true"></div>
+
+  <!-- ═══ CUSTOM CURSOR ═══ -->
+  <div id="cursor-dot"  aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+  <div id="mouse-glow"  aria-hidden="true"></div>
+
+  <!-- ═══ PARTICLES ═══ -->
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo" aria-label="F4FLUX Home">F4FLUX</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="instagram.html">Instagram</a></li>
+      <li><a href="youtube.html">YouTube</a></li>
+      <li><a href="facebook.html">Facebook</a></li>
+      <li><a href="x.html">X</a></li>
+      <li><a href="website.html">Website</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html#hero">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="instagram.html">Instagram</a>
+    <a href="youtube.html">YouTube</a>
+    <a href="facebook.html">Facebook</a>
+    <a href="x.html">X</a>
+    <a href="website.html">Website</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section id="hero" aria-label="Hero section">
+    <div class="hero-bg-grid"     aria-hidden="true"></div>
+    <div class="hero-bg-gradient" aria-hidden="true"></div>
+
+    <p class="hero-eyebrow">Est. 2024 — Premium Streetwear</p>
+
+    <div style="position:relative; display:inline-block;">
+      <h1 class="hero-title">F4FLUX</h1>
+      <div class="hero-title-glow" aria-hidden="true">F4FLUX</div>
+    </div>
+
+    <p class="hero-tagline">
+      <strong>More Than Clothing.</strong><br>
+      It's an Identity.
+    </p>
+
+    <p class="hero-sub">Follow us everywhere.</p>
+
+    <div class="hero-cta-group">
+      <a href="#social" class="btn btn-primary">Explore Our World ↓</a>
+      <a href="#about"  class="btn btn-outline">Our Story →</a>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-mouse"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE ═══ -->
+  <div class="marquee-section" aria-hidden="true">
+    <div class="marquee-track">
+      <span>F4FLUX</span><span class="accent">◆</span>
+      <span>Premium Streetwear</span><span class="accent">◆</span>
+      <span>Born From Culture</span><span class="accent">◆</span>
+      <span>Worn By Visionaries</span><span class="accent">◆</span>
+      <span>Identity Over Fashion</span><span class="accent">◆</span>
+      <span>Drop Season 2024</span><span class="accent">◆</span>
+      <span>F4FLUX</span><span class="accent">◆</span>
+      <span>Premium Streetwear</span><span class="accent">◆</span>
+      <span>Born From Culture</span><span class="accent">◆</span>
+      <span>Worn By Visionaries</span><span class="accent">◆</span>
+      <span>Identity Over Fashion</span><span class="accent">◆</span>
+      <span>Drop Season 2024</span><span class="accent">◆</span>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section id="about" class="section" aria-labelledby="about-title">
+    <div class="about-inner">
+      <span class="section-tag reveal">Our Story</span>
+      <h2 class="section-title reveal" id="about-title">
+        We Are <span>F4FLUX</span>
+      </h2>
+      <div class="section-divider"></div>
+      <p class="about-text reveal">
+        <strong>F4FLUX is not just another clothing brand.</strong><br><br>
+        We create <strong>premium streetwear</strong> inspired by confidence, creativity, and individuality.
+        Every design represents a lifestyle — not just fashion. We believe that what you wear
+        speaks before you do. That's why every stitch, every drop, every silhouette is crafted
+        with intention and purpose.<br><br>
+        <strong>This is more than clothing. This is F4FLUX.</strong>
+      </p>
+
+      <div class="about-pillars">
+        <div class="pillar reveal" style="transition-delay:0.1s">
+          <div class="pillar-icon"><ion-icon name="flash-outline"></ion-icon></div>
+          <h4>Confidence</h4>
+          <p>Wear what makes you feel unstoppable.</p>
+        </div>
+        <div class="pillar reveal" style="transition-delay:0.2s">
+          <div class="pillar-icon"><ion-icon name="brush-outline"></ion-icon></div>
+          <h4>Creativity</h4>
+          <p>Every piece is a canvas for expression.</p>
+        </div>
+        <div class="pillar reveal" style="transition-delay:0.3s">
+          <div class="pillar-icon"><ion-icon name="finger-print-outline"></ion-icon></div>
+          <h4>Identity</h4>
+          <p>Dress for who you are, not who they expect.</p>
+        </div>
+        <div class="pillar reveal" style="transition-delay:0.4s">
+          <div class="pillar-icon"><ion-icon name="diamond-outline"></ion-icon></div>
+          <h4>Premium</h4>
+          <p>Quality without compromise. Always.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SOCIAL HUB ═══ -->
+  <section id="social" class="section" aria-labelledby="social-title">
+    <div class="hero-bg-grid"     aria-hidden="true"></div>
+    <div class="hero-bg-gradient" aria-hidden="true"></div>
+    <span class="section-tag reveal">Connect With Us</span>
+    <h2 class="section-title reveal" id="social-title">Social <span>Hub</span></h2>
+    <div class="section-divider"></div>
+    <p class="reveal" style="color:var(--text-muted);font-size:0.9rem;max-width:500px;line-height:1.8;margin-bottom:0.5rem;">
+      Find F4FLUX everywhere. Choose your platform and enter our world.
+    </p>
+
+    <div class="social-grid">
+
+      <!-- Instagram -->
+      <div class="social-card reveal" style="transition-delay:0.05s">
+        <div class="sc-glow"></div>
+        <div class="sc-icon"><ion-icon name="logo-instagram"></ion-icon></div>
+        <p class="sc-platform">Social Media</p>
+        <h3 class="sc-title">Instagram</h3>
+        <p class="sc-desc">Visual stories, drops, and culture. Follow the official F4FLUX Instagram.</p>
+        <a href="instagram.html" class="sc-btn">View Profiles ↗</a>
+      </div>
+
+      <!-- YouTube -->
+      <div class="social-card reveal" style="transition-delay:0.10s">
+        <div class="sc-glow"></div>
+        <div class="sc-icon"><ion-icon name="logo-youtube"></ion-icon></div>
+        <p class="sc-platform">Video</p>
+        <h3 class="sc-title">YouTube</h3>
+        <p class="sc-desc">Brand films, lookbooks, behind-the-scenes & drop recaps.</p>
+        <a href="youtube.html" class="sc-btn">View Channels ↗</a>
+      </div>
+
+      <!-- Facebook -->
+      <div class="social-card reveal" style="transition-delay:0.15s">
+        <div class="sc-glow"></div>
+        <div class="sc-icon"><ion-icon name="logo-facebook"></ion-icon></div>
+        <p class="sc-platform">Community</p>
+        <h3 class="sc-title">Facebook</h3>
+        <p class="sc-desc">News, events, and the official F4FLUX community group.</p>
+        <a href="facebook.html" class="sc-btn">View Pages ↗</a>
+      </div>
+
+      <!-- X (Twitter) -->
+      <div class="social-card reveal" style="transition-delay:0.20s">
+        <div class="sc-glow"></div>
+        <div class="sc-icon"><ion-icon name="logo-twitter"></ion-icon></div>
+        <p class="sc-platform">Micro Blog</p>
+        <h3 class="sc-title">X (Twitter)</h3>
+        <p class="sc-desc">Unfiltered thoughts, culture, and real-time drop alerts.</p>
+        <a href="x.html" class="sc-btn">View Profiles ↗</a>
+      </div>
+
+      <!-- Official Website -->
+      <div class="social-card reveal" style="transition-delay:0.25s">
+        <div class="sc-glow"></div>
+        <div class="sc-icon"><ion-icon name="globe-outline"></ion-icon></div>
+        <p class="sc-platform">Online Store</p>
+        <h3 class="sc-title">Website</h3>
+        <p class="sc-desc">Official F4FLUX store and brand portal — shop the drops.</p>
+        <a href="website.html" class="sc-btn">Visit Sites ↗</a>
+      </div>
+
+      <!-- Discord -->
+      <div class="social-card reveal" style="transition-delay:0.30s">
+        <div class="sc-glow"></div>
+        <div class="sc-icon"><ion-icon name="logo-discord"></ion-icon></div>
+        <p class="sc-platform">Community</p>
+        <h3 class="sc-title">Discord</h3>
+        <p class="sc-desc">Join the server. Connect with the F4FLUX community 24/7.</p>
+        <a href="https://discord.gg/f4flux" target="_blank" rel="noopener" class="sc-btn">Join Server ↗</a>
+      </div>
+
+      <!-- Email -->
+      <div class="social-card reveal" style="transition-delay:0.35s">
+        <div class="sc-glow"></div>
+        <div class="sc-icon"><ion-icon name="mail-outline"></ion-icon></div>
+        <p class="sc-platform">Direct</p>
+        <h3 class="sc-title">Email</h3>
+        <p class="sc-desc">Business inquiries, collabs, press — reach us directly.</p>
+        <a href="mailto:contact@f4flux.com" class="sc-btn">Send Email ↗</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE 2 ═══ -->
+  <div class="marquee-section" aria-hidden="true" style="--marquee-dir:-1;">
+    <div class="marquee-track" style="animation-direction:reverse; animation-duration:28s;">
+      <span>Premium Quality</span><span class="accent">★</span>
+      <span>Limited Drops</span><span class="accent">★</span>
+      <span>Streetwear Culture</span><span class="accent">★</span>
+      <span>F4FLUX Community</span><span class="accent">★</span>
+      <span>No Compromise</span><span class="accent">★</span>
+      <span>New Season Coming</span><span class="accent">★</span>
+      <span>Premium Quality</span><span class="accent">★</span>
+      <span>Limited Drops</span><span class="accent">★</span>
+      <span>Streetwear Culture</span><span class="accent">★</span>
+      <span>F4FLUX Community</span><span class="accent">★</span>
+      <span>No Compromise</span><span class="accent">★</span>
+      <span>New Season Coming</span><span class="accent">★</span>
+    </div>
+  </div>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section id="contact" class="section" aria-labelledby="contact-title">
+    <div class="contact-inner">
+      <span class="section-tag reveal">Get In Touch</span>
+      <h2 class="section-title reveal" id="contact-title">Let's <span>Connect</span></h2>
+      <div class="section-divider"></div>
+      <p class="reveal" style="color:var(--text-muted);font-size:0.9rem;line-height:1.8;">
+        Collabs, press, business inquiries, or just want to say something — we're listening.
+      </p>
+      <a href="mailto:contact@f4flux.com" class="contact-email reveal">
+        ✉&nbsp; contact@f4flux.com
+      </a>
+      <p class="contact-tagline reveal">We usually respond within 24 hours.</p>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <span class="nav-logo">F4FLUX</span>
+        <p>More Than Clothing.<br>It's an Identity.</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h5>Navigate</h5>
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#social">Social Hub</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+
+      <div class="footer-links-col">
+        <h5>Social</h5>
+        <a href="instagram.html">Instagram</a>
+        <a href="youtube.html">YouTube</a>
+        <a href="facebook.html">Facebook</a>
+        <a href="x.html">X (Twitter)</a>
+        <a href="website.html">Website</a>
+      </div>
+
+      <div>
+        <h5 style="font-size:0.7rem;letter-spacing:0.3em;text-transform:uppercase;color:var(--text-sub);margin-bottom:1rem;">Follow</h5>
+        <div class="footer-socials">
+          <a href="instagram.html" class="footer-social-link" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+          <a href="youtube.html"   class="footer-social-link" aria-label="YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+          <a href="facebook.html"  class="footer-social-link" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+          <a href="x.html"         class="footer-social-link" aria-label="X"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a href="https://discord.gg/f4flux" target="_blank" rel="noopener" class="footer-social-link" aria-label="Discord"><ion-icon name="logo-discord"></ion-icon></a>
+          <a href="mailto:contact@f4flux.com" class="footer-social-link" aria-label="Email"><ion-icon name="mail-outline"></ion-icon></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2024 <span>F4FLUX</span>. All rights reserved. More Than Clothing — It's an Identity.</p>
+      <p class="footer-copy" style="color:var(--text-sub);">Built with ❤️ for the culture.</p>
+    </div>
+  </footer>
+
+  <!-- ═══ BACK TO TOP ═══ -->
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ═══ SCRIPTS ═══ -->
+  <script src="js/main.js"></script>
+</body>
+</html>

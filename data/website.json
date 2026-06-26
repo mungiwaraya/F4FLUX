@@ -1,0 +1,18 @@
+[
+  {
+    "name": "F4FLUX Store",
+    "username": "shop.f4flux.com",
+    "profile": "images/profile-f4flux.svg",
+    "description": "Official online store — shop the latest collections and exclusive drops.",
+    "verified": true,
+    "url": "https://shop.f4flux.com"
+  },
+  {
+    "name": "F4FLUX Hub",
+    "username": "hub.f4flux.com",
+    "profile": "images/profile-drops.svg",
+    "description": "Brand portal — lookbooks, editorial stories & campaign archives.",
+    "verified": true,
+    "url": "https://hub.f4flux.com"
+  }
+]

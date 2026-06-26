@@ -1,0 +1,18 @@
+[
+  {
+    "name": "F4FLUX Official Page",
+    "username": "@F4FLUX",
+    "profile": "images/profile-f4flux.svg",
+    "description": "Official F4FLUX Facebook page — news, events & community.",
+    "verified": true,
+    "url": "https://facebook.com/F4FLUX"
+  },
+  {
+    "name": "F4FLUX Community",
+    "username": "@F4FLUXCommunity",
+    "profile": "images/profile-drops.svg",
+    "description": "Join the F4FLUX family — exclusive member community group.",
+    "verified": false,
+    "url": "https://facebook.com/groups/F4FLUXCommunity"
+  }
+]

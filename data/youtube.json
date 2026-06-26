@@ -1,0 +1,18 @@
+[
+  {
+    "name": "F4FLUX Official",
+    "username": "@F4FLUXOfficial",
+    "profile": "images/profile-f4flux.svg",
+    "description": "Official YouTube channel — brand films, lookbooks & behind-the-scenes.",
+    "verified": true,
+    "url": "https://youtube.com/@F4FLUXOfficial"
+  },
+  {
+    "name": "F4FLUX Vlogs",
+    "username": "@F4FLUXVlogs",
+    "profile": "images/profile-founder.svg",
+    "description": "Daily vlogs, design process & street culture.",
+    "verified": false,
+    "url": "https://youtube.com/@F4FLUXVlogs"
+  }
+]

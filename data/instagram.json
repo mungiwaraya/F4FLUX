@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Official F4FLUX",
+    "username": "@f4flux",
+    "profile": "images/profile-f4flux.svg",
+    "description": "Official F4FLUX Clothing Brand — Premium Streetwear.",
+    "verified": true,
+    "url": "https://instagram.com/f4flux"
+  },
+  {
+    "name": "F4FLUX Founder",
+    "username": "@f4flux.founder",
+    "profile": "images/profile-founder.svg",
+    "description": "Founder & Creative Director of F4FLUX.",
+    "verified": true,
+    "url": "https://instagram.com/f4flux.founder"
+  },
+  {
+    "name": "F4FLUX Drops",
+    "username": "@f4flux.drops",
+    "profile": "images/profile-drops.svg",
+    "description": "Latest drops, restocks & exclusive releases.",
+    "verified": false,
+    "url": "https://instagram.com/f4flux.drops"
+  }
+]

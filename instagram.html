@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="F4FLUX on Instagram — Follow the official accounts and stay updated with the latest drops." />
+  <title>F4FLUX — Instagram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <style>
+    /* Platform accent override */
+    :root { --accent: #C13584; --accent-2: #833ab4; --accent-alt: #fd1d1d; --accent-glow: rgba(193,53,132,0.35); }
+  </style>
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-icon"><ion-icon name="logo-instagram"></ion-icon></div>
+    <div class="loader-logo" style="font-size:clamp(2rem,6vw,4rem);">F4FLUX</div>
+    <div class="loader-bar-track"><div class="loader-bar"></div></div>
+    <p class="loader-text">Instagram</p>
+  </div>
+
+  <div id="page-transition" aria-hidden="true"></div>
+  <div id="cursor-dot"  aria-hidden="true"></div>
+  <div id="cursor-ring" aria-hidden="true"></div>
+  <div id="mouse-glow"  aria-hidden="true"></div>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <!-- Navbar -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">F4FLUX</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="instagram.html" class="active">Instagram</a></li>
+      <li><a href="youtube.html">YouTube</a></li>
+      <li><a href="facebook.html">Facebook</a></li>
+      <li><a href="x.html">X</a></li>
+      <li><a href="website.html">Website</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="mobile-nav" id="mobile-nav">
+    <a href="index.html#hero">Home</a>
+    <a href="index.html#about">About</a>
+    <a href="instagram.html">Instagram</a>
+    <a href="youtube.html">YouTube</a>
+    <a href="facebook.html">Facebook</a>
+    <a href="x.html">X</a>
+    <a href="website.html">Website</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+
+  <!-- Page Hero -->
+  <header class="page-hero">
+    <div class="page-hero-bg" aria-hidden="true"></div>
+    <span class="section-tag">Social Media</span>
+    <h1 class="page-hero-title">Instagram</h1>
+    <p class="page-hero-sub">
+      <span id="account-count">Loading…</span> — Follow F4FLUX on Instagram
+    </p>
+    <div class="search-container">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="search-input" placeholder="Search accounts…" autocomplete="off" />
+    </div>
+  </header>
+
+  <!-- Accounts -->
+  <section class="accounts-section">
+    <a href="index.html" class="btn btn-outline" style="display:inline-flex;margin-bottom:2rem;font-size:0.75rem;">← Back to Hub</a>
+    <div class="accounts-grid" id="accounts-grid">
+      <!-- Cards injected by JS -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" role="contentinfo" style="padding:2.5rem 5%;">
+    <div class="footer-bottom" style="border-top:1px solid var(--border);padding-top:2rem;">
+      <p class="footer-copy">© 2024 <span>F4FLUX</span>. All rights reserved.</p>
+      <a href="index.html" style="font-size:0.75rem;color:var(--text-muted);">← Back to Home</a>
+    </div>
+  </footer>
+
+  <button id="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Config for loadSocial.js -->
+  <script>
+    window.F4FLUX_PAGE_CONFIG = {
+      jsonFile:    'data/instagram.json',
+      platform:    'Instagram',
+      accentColor: '#C13584',
+      icon:        '📸',
+      buttonLabel: 'Open Instagram',
+      buttonIcon:  '↗'
+    };
+  </script>
+  <script src="js/main.js"></script>
+  <script src="js/loadSocial.js"></script>
+</body>
+</html>
